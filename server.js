@@ -18,10 +18,14 @@ app.use(bodyParser.json());
 const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
-mongoose
-  .connect(db)
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(db)
+//   .then(() => console.log('MongoDB Connected'))
+//   .catch(err => console.log(err));
+
+mongoose.connect(DB, {useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false  })
+  .then(() => console.log('DB connected'))
+  .catch(err => console.log("Error Starts: " + err + "Error Ends"));  
 
 // Passport middleware
 app.use(passport.initialize());
