@@ -15,6 +15,11 @@ $ sudo snap install --classic heroku
 
 If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
 $ heroku login
+or
+$ heroku login -i
+
+Create heroku app
+$ heroku create
 
 Create a new Git repository
 Initialize a git repository in a new or existing directory
