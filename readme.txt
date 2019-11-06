@@ -7,7 +7,12 @@ $ git push -u origin master
 
 $ git pull https://github.com/shakti-osd/mern.git
 
+
 Heroku Migration
+
+Install Heroku on Ubuntu
+$ sudo snap install --classic heroku
+
 If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
 $ heroku login
 
