@@ -10,6 +10,9 @@ $ git pull https://github.com/shakti-osd/mern.git
 
 Heroku Migration
 
+Heroku Git URL: https://git.heroku.com/kinsii.git
+
+
 Install Heroku on Ubuntu
 $ sudo snap install --classic heroku
 
@@ -39,3 +42,9 @@ Existing Git repository
 For existing repositories, simply add the heroku remote
 
 $ heroku git:remote -a kinsii
+
+
+Create Build
+$ cd client
+$ npm run build
+
